@@ -1,0 +1,11 @@
+<beans>
+    <bean id = "wheel" class = "com.test.spring.ioc.v1.Wheel">
+        <property name="brand"  value="Benz"/>
+        <property name="name" value="Benz w1" />
+    </bean>
+    <bean id = "car" class = "com.test.spring.ioc.v1.Car">
+        <property name="name"  value="Mercedes Benz G 500"/>
+        <property name="color" value="white" />
+        <property name="wheel" ref="wheel" />
+    </bean>
+</beans>
