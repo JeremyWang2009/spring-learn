@@ -30,6 +30,5 @@ AOP 是基于代理模式的，代理模式是实现 AOP 的基础，代理模�
 - 对 BeanFactoryAware 类型的 bean 提供支持
 - 实现了基于 JDK 动态代理的 AOP 
 - 整合了 IOC 和 AOP，使得两者可以协同工作
-# IOC 的实现
 ## BeanFactory 的生命流程
 
