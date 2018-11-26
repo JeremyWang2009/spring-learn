@@ -22,7 +22,7 @@
 
     <properties>
         <junit.version>4.12</junit.version>
-        <spring-framework-version>5.0.5.RELEASE</spring-framework-version>
+        <spring-framework-version>5.0.7.RELEASE</spring-framework-version>
         <aspect-version>1.9.1</aspect-version>
         <cglib-version>3.2.6</cglib-version>
         <fastjson-version>1.2.53</fastjson-version>

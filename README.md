@@ -31,4 +31,24 @@ AOP 是基于代理模式的，代理模式是实现 AOP 的基础，代理模�
 - 实现了基于 JDK 动态代理的 AOP 
 - 整合了 IOC 和 AOP，使得两者可以协同工作
 ## BeanFactory 的生命流程
+1. BeanFactory 加载 Bean 配置文件，将读到的 Bean 配置封装成 BeanDefinition 对象
+2. 将分装好的 BeanDefinition 对象注册到 BeanDefeinition 容器中
+3. 注册 BeanPostProcessor 相关实现类到 BeanPostProcessor 容器中
+4. BeanFactory 进入就绪状态
+5. 外部调用 BeanFactory 的 getBean(String name) 方法，BeanFactory 着手实例化相应 Bean
+6. 重复步骤 3 和 4，直至程序退出，BeanFactory 被销毁
+## BeanDefeinition 及其他一些类介绍
+在详细的介绍 IOC 容器之前，这里先介绍一个实现 IOC 所用到的辅助类，包括 BeanDefinition、BeanReference、PropertyValues、PropertyValue等
+
+
+
+
+
+
+
+
+
+
+
+
 
